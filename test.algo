@@ -1,0 +1,26 @@
+ALGORITHM syrine
+VAR
+ c[100]:CHAR;
+ yb : yd:INTEGER:=0;
+ yx:=1;
+
+BEGIN
+REPEAT
+    Write(" veuillez donner une caractere");
+    Read(c);
+    
+    yb:=yb+1;
+    IF (c='') THEN
+        yx:=yx+1;
+    END_IF
+
+IF (c='a' or c='e' or c='i' or c='v' or c='y' or c='w') THEN
+    yd:=yd+1;
+END_IF
+
+    UNTIL 
+    (c='.')
+  Write("le nombre de caractere ", yb);
+  Write("le nombre de mots",yx);
+  Write("le nombre de vowels",yd);
+END
